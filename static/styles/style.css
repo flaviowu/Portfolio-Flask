@@ -336,6 +336,14 @@ section#contato div#form form button:hover{
     transform: scale(1.2);
 }
 
+footer {
+    margin: 0;
+    text-align: center;
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.20);
+
+}
+
 /* Send Success */
 section#success{
     display: flex;
