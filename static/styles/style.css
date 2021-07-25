@@ -85,20 +85,26 @@ header#inicio div#img-selo img{
 
 section#sobreMim {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 4rem;
     background-color: #000000;
 }
 
-section#sobreMim div img {
-    border-radius: .5vw;
-    text-align: justify;
-    margin: 1.2vw;
-    width: 90%;
+/* section#sobreMim div#selfie {
+} */
+
+section#sobreMim div#selfie img {
+    border-radius: 1.8vw;
+    margin: 1.2vh 1.2vw 1.2vh 1.2vw;
+    height: 75vh;
 }
 
-section#sobreMim div p {
+section#sobreMim div#texto-sobre {
+    width: 65%;
+}
+
+section#sobreMim div#texto-sobre p {
     font-size: 1.3vw;
     text-align: justify;
     margin-left: 5vw;
@@ -111,7 +117,7 @@ section#projetos {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: initial;
+    align-items: stretch;
     padding: 3rem;
 }
 
@@ -123,10 +129,11 @@ section#projetos div img {
 
 section#projetos div {
     width: 20vw;
-    height: 50h;
+    /* height: 52vh; */
     border-radius: .5rem;
     text-align: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     padding: 1rem;
     transition: .6s ease-in-out;
 }
@@ -137,9 +144,14 @@ section#projetos div:hover {
     transform: scale(1.1);
 }
 
+section#projetos div img{
+    height: 8.5rem;
+}
+
 section#projetos div p{
     margin: .5vw;
-    text-align: justify;
+    height: 15vh;
+    text-align: center;
 }
 
 section#projetos div h2{
@@ -169,8 +181,7 @@ section#projetos div button:hover {
 
 section#habilidades {
     background-color: #000000;
-    padding: 3rem 10rem 3rem 10rem;
-
+    padding: 3rem 10rem 5rem 10rem;
 }
 
 section#habilidades h2{
@@ -209,6 +220,15 @@ section#habilidades div span#java {
     padding: .3rem;
     border-radius: 1rem;
     width: 60%;
+
+}
+section#habilidades div span#javaScript {
+    background-color: #dd0000;
+    color: #ffff;
+    text-align: center;
+    padding: .3rem;
+    border-radius: 1rem;
+    width: 62%;
 }
 
 section#habilidades div span#mySQL {
