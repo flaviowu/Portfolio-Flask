@@ -121,13 +121,7 @@ section#projetos {
     padding: 3rem;
 }
 
-section#projetos div img {
-    margin: auto;
-    display: inline-block;
-    border-radius: .5rem;
-}
-
-section#projetos div {
+section#projetos div.card {
     width: 20vw;
     /* height: 52vh; */
     border-radius: .5rem;
@@ -138,27 +132,36 @@ section#projetos div {
     transition: .6s ease-in-out;
 }
 
-section#projetos div:hover {
+section#projetos div.card img {
+    margin: auto;
+    display: inline-block;
+    border-radius: .5rem;
+    height: 8.5rem;
+}
+
+section#projetos div.card div.projeto-texto{
+    height: 35vh;
+
+}
+
+section#projetos div.card:hover {
     background-color: #000000;
     color: #fff;
     transform: scale(1.1);
 }
 
-section#projetos div img{
-    height: 8.5rem;
-}
-
-section#projetos div p{
+section#projetos div.card div.projeto-texto p{
     margin: .5vw;
-    height: 15vh;
+    height: 20vh;
     text-align: center;
 }
 
-section#projetos div h2{
+section#projetos div.card div.projeto-texto h2{
     padding: 2rem;
+    height: 10vh;
 }
 
-section#projetos div button {
+section#projetos div.card a button {
     border: 1px solid #000000;
     background-color: rgb(255, 255, 255);
     color: #000000;
@@ -172,7 +175,7 @@ section#projetos div button {
     transition: .6s ease-in-out;
 }
 
-section#projetos div button:hover {
+section#projetos div a button:hover {
     background-color: #dd0000;
     color: rgb(255, 255, 255);
     border-color: #dd0000;
