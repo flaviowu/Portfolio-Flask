@@ -9,7 +9,7 @@ mail_settings = {
      'MAIL_USE_TLS': False,
      'MAIL_USE_SSL': True,
      'MAIL_USERNAME': 'contatoflaviowu@gmail.com',
-     'MAIL_PASSWORD':'dpcoftwfordnawdy'
+     'MAIL_PASSWORD':'xtzmkzjmxrnrmkcp'
  }
 
 app.config.update(mail_settings)
